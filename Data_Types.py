@@ -50,3 +50,7 @@ Car = {
 }
 print(Car["brand"])
 print(type(Car)) 
+
+#writing things differently
+Fruits = ["apple", "banana", "orange"]
+
