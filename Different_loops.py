@@ -11,3 +11,8 @@ while i < 6:
   i += 1
 else:
   print("i is no longer less than 6")
+
+#using nested loop
+for x in range(1, 10):
+  for y in range(1):
+    print(x,y )
