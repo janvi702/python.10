@@ -1,3 +1,4 @@
+#Timer mini project
 import time
 
 my_time= int(input("Enter the time in seconds: "))
