@@ -35,6 +35,61 @@ print(b[3])
 print(b[-3])
 print(type(b)) 
 
+List[]
+fruits= ["apple", "banana", "orange", "pineapple"]
+print(dir(fruits)) #for the things, the list is able to do
+print(help(fruits)) #for different terms that could help
+print(len(fruits)) # gives the length
+print("apple" in fruits) #a question if apple is in the fruits list(gives boolen output)
+
+fruits[0] = "Plum"
+for fruit in fruits:
+	print(fruit) #the fruit in the list with index 0 --> apple, will change to plum
+
+#to add an element in the list, we use append
+fruits.append("watermelon")
+print(fruits)
+
+#to remove an element, use remove
+fruits.remove("banana")
+print(fruits)
+
+#to insert an element in a given index
+fruits.insert(0, "melon")
+print(fruits)
+
+#to sort list in alphabetical order
+fruits.sort()
+print(fruits)
+
+#to reverse a list, use reverse
+fruits.reverse()
+print(fruits)
+
+#to clear the list, we use clear
+fruits.clear()
+print(fruits)
+
+#to print the index of an element
+print(fruits.index("orange"))
+
+#to count how many duplicates are available
+print(fruits.count("orange"))
+
+
+set{}
+fruits= {"apple", "banana", "orange", "pineapple"}
+print(dir(fruits)) #for the things, the list is able to do
+print(help(fruits)) #for different terms that could help
+print(len(fruits)) # gives the length
+print("apple" in fruits) #a question if apple is in the fruits list(gives boolen output)
+
+fruits.add("melon") #to add an element in the set
+fruits.remove("banana") #to remove an element from set
+fruits.pop() # randomly pops an element
+fruits.clear() #clears the element
+
+
 
 #Tupple- ordered and unchangeable
 Fruits = ("apple", "banana", "cherry")
