@@ -1,3 +1,4 @@
+#to make a username
 username= input("Enter the username: ")
 
 if len(username) > 12:
