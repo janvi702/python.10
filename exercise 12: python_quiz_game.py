@@ -1,10 +1,8 @@
 #quiz game using python
-questions = (
-    "Which of the following is the element: ",
-    "The SI unit of force is: ",
-    "Which one is prokaryotic cell: ",
-    "The control center of the cell is: "
-)
+questions = ("Which of the following is the element: ",
+             "The SI unit of force is: ",
+             "Which one is prokaryotic cell: ",
+             "The control center of the cell is: ")
 
 options = (
     ("A. Water", "B. Oxygen", "C. Salt", "D. Air"),
@@ -18,7 +16,7 @@ guesses = []
 
 score = 0
 Q_num = 0
-
+#Building a loop for each answer, comparing guesses with answers
 print("-------------------------------------------")
 for q in questions:
     print(q)
