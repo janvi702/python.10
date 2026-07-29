@@ -4,4 +4,12 @@ import random
 num = random.randint(1, 50) 
 print(num) 
 
-#
+#Alternate method
+import random
+low = 1
+high = 50
+num = random.randint(low, high) #returns random number between 1 to 50
+
+num = random.random() #returns floating point between 0 and 1
+
+print(num) 
