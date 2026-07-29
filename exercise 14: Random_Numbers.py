@@ -1,6 +1,5 @@
 #To generate a random number from 1 to 50
 import random
-
 num = random.randint(1, 50) 
 print(num) 
 
