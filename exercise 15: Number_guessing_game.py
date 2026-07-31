@@ -6,24 +6,23 @@ answer = random.randint(low, high)
 guesses = 0
 is_running = True
 
-print("python number guessing game")
-print(f"Select a number between {low} and {high}")
+print("Number Guessing Game")
+print(f"Select a number between {low} and {high}: ")
 
 while is_running:
-	guess = input("Enter your guess")
+	guess = input("Enter your guess: ")
 
 	if guess.isdigit():
 		guess = int(guess)
 		guesses +=1
 		
 		if guess < low or guess > high:
-			print("The Number is out of range, Retry!")
+			print("The Number is out of range, Retry!  ")
 		elif guess < answer:
-			print("Too low, try again!")
+			print("Too low, try again!  ")
 		elif guess > answer:
-			print("Too high, try again!")
+			print("Too high, try again!  ")
 		else:
-			print (f"You guessed correctly! Number is {guesses}")
+			print (f"You guessed correctly! Number is:  {guesses}")
 	else:
 		print("Invaild guess!, Retry!")
-
