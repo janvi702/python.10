@@ -1,0 +1,52 @@
+#quiz game using python
+questions = ("Which of the following is the element: ",
+             "The SI unit of force is: ",
+             "Which one is prokaryotic cell: ",
+             "The control center of the cell is: ")
+
+options = (
+    ("A. Water", "B. Oxygen", "C. Salt", "D. Air"),
+    ("A. Newton", "B. Pascal", "C. Joule", "D. Kelvin"),
+    ("A. Human", "B. Plants", "C. Bacteria", "D. Virus"),
+    ("A. Cell membrane", "B. Cytoplasm", "C. Nucleus", "D. Vacuole")
+)
+
+answers = ("B", "A", "C", "C")
+guesses = []
+
+score = 0
+Q_num = 0
+#Building a loop for each answer, comparing guesses with answers
+print("-------------------------------------------")
+for q in questions:
+    print(q)
+    for o in options[Q_num]:
+        print(o)
+    
+    guess = input("Enter the option: (A B C D): ").upper()
+    guesses.append(guess)
+    
+    if guess == answers[Q_num]:
+        score += 1
+        print("Correct!")
+    else:
+        print("Incorrect!")
+        print(f"{answers[Q_num]} is the correct answer")
+    
+    print("-------------------------------------------")
+    Q_num += 1
+
+print("\n--- Results ---")
+
+print("Answers: ", end="")
+for ans in answers:
+    print(ans, end=" ")
+print()
+
+print("Guesses: ", end="")
+for guess in guesses:
+    print(guess, end=" ")
+print()
+
+score = int(score / len(questions) * 100)
+print(f"Your score is {score}%")

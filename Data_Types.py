@@ -105,6 +105,17 @@ Car = {
 }
 print(Car["brand"])
 print(type(Car)) 
+print(dir(Car)) 
+print(help(Car)) 
+print(Car.get(“brand")) 
+print(Car.clear()) 
+
+Car.pop("year") 
+print.update({"Owner": "Janvi"}) 
+print(Car) 
+
+keys = Car.keys() 
+print(keys) 
 
 #writing things differently
 Fruits = ["apple", "banana", "orange"]
